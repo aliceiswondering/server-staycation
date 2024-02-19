@@ -9,7 +9,7 @@ var session = require('express-session');
 var flash = require('connect-flash');
 //import mongoose
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/db_staycation');
+mongoose.connect('mongodb+srv://vercel-admin-user-65d37715b22b6f534ba80e51:rahasia@cluster.vescnj9.mongodb.net/?retryWrites=true&w=majority');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
