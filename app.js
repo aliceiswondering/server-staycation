@@ -9,7 +9,7 @@ var session = require('cookie-session');
 var flash = require('connect-flash');
 //import mongoose
 var mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://bulannns12:rahasia@cluster.vescnj9.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb://localhost:27017/db_staycation');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
