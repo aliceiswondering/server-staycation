@@ -5,11 +5,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override');
-var session = require('cookie-session');
+var session = require('express-session');
 var flash = require('connect-flash');
 //import mongoose
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/db_staycation');
+mongoose.connect('mongodb+srv://bulannns12:rahasia@cluster.vescnj9.mongodb.net/db_staycation?retryWrites=true&w=majority');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
