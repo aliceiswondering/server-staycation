@@ -12,7 +12,11 @@ var mongoose = require('mongoose');
 
 try {
   // mongoose.connect('mongodb+srv://bulan123:bulan12345@cluster.vescnj9.mongodb.net/db_staycation?retryWrites=true&w=majority');
+  if(process.env.MONGODB_URI){
+    throw("MONGODB_URI NOT FOUND")
+  }
   mongoose.connect(process.env.MONGODB_URI)
+  console.log(process.env.MONGODB_URI)
   // mongoose.connect('mongodb://localhost:27017/db_staycation');
   console.log("Success connection")
 } catch (error) {
