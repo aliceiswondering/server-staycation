@@ -16,8 +16,7 @@ try {
 } catch (error) {
   console.log("error" + error)
 }
-
-
+// mongoose.connect('mongodb+srv://bulannns12:rahasia@cluster.vescnj9.mongodb.net/db_staycation?retryWrites=true&w=majority');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
