@@ -5,7 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override');
-var session = require('express-session');
+var session = require('cookie-session');
 var flash = require('connect-flash');
 //import mongoose
 var mongoose = require('mongoose');
