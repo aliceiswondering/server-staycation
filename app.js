@@ -9,7 +9,14 @@ var session = require('express-session');
 var flash = require('connect-flash');
 //import mongoose
 var mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://bulannns12:rahasia@cluster.vescnj9.mongodb.net/db_staycation?retryWrites=true&w=majority');
+
+try {
+  mongoose.connect('mongodb+srv://bulannns12:rahasia@cluster.vescnj9.mongodb.net/db_staycation?retryWrites=true&w=majority');
+  console.log("Success connection")
+} catch (error) {
+  console.log("error" + error)
+}
+
 
 
 var indexRouter = require('./routes/index');
